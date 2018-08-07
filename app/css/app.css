@@ -38,3 +38,26 @@ span.b {
     margin-top: 120px;
     text-align: center;
 }
+/* .message{
+    margin-left: 500px;
+}
+ */
+ .messsage-anchor{
+    display: block;
+    text-align: center;
+ }
+.nav-item{
+    padding: 4px;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+   
+}
+#myNavbar{
+    position: fixed;
+   /*  margin-left: 181px; */
+}
+#myNavbar ul{
+    list-style-type: none;
+  }
