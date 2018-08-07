@@ -1,0 +1,40 @@
+.home
+{
+    margin-top:100px;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+.home-text
+{
+    margin-top:120px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+.cont{
+    background-image: url('../images/home.jpeg');
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+span.b {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid blue;        
+    background-color: white;
+    text-align: center; 
+   
+}
+
+.blocks{
+   
+    margin-top: 120px;
+    text-align: center;
+}
