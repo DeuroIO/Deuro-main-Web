@@ -13,7 +13,21 @@
 </head>
   <body ng-controller="myController" class="cont">
 <div>
-		
+	<div ng-show="showLoader"><!-- so this div containing img will be dislpayed only when the showLoader is equal to true-->
+		<img src="./images/splash.jpeg"> <!-- or any other spinner -->
+	</div>
+
+<div class="collapse navab-right navbar-collapse navbar-right" id="myNavbar">
+	<button ng-click="toggleClass()"><img src="./images/navigation.png" width="20px;" height="20px;"></button>
+		<ul class="nav navbar-nav" ng-show="myvalue">
+				
+						<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
+						<li class="nav-item"><a href="http://ai.deuro.io" class="nav-link" ><i class="fa fa-user-o"></i>&nbsp;&nbsp;AI</a></li>
+						<li class="nav-item"><a href="http://sys.deuro.io" class="nav-link"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Sys</a></li>
+						<li class="nav-item"><a href="http://dapp.deuro.io" class="nav-link"><i class="fa fa-arrows"></i>&nbsp;&nbsp;dApp</a></li>
+				
+		</ul>
+		</div>
 		   
     <div class="home" align="center">
 		Deuro
@@ -22,14 +36,24 @@
 		Democratize AI on the Blockchain
 
 	</div>
-	<div class="blocks">
-		<span class="b">THE SINGULARITY</span>
-		 <span class="b">DEMOCRATIZATION</span> 
-		 <span class="b">TOKEN ECONOMY</span> 
-		 <span class="b">INTELLIGENT</span> 
-		 <span class="b">TRUSTWOTHINESS</span> 
+		<div class="blocks">
+					<span class="b">THE SINGULARITY
+						<p style="display:none;">Accelarating AI Singularity at the heart of blockchain.</p>
+					</span>
+					<span class="b">DEMOCRATIZATION
+						<p style="display:none;">Deuro reconstructs AI infrastructure, it makes AI technology accessible, intelligent, dynamic and  evolutionary.</p>
+					</span> 
+					<span class="b">TOKEN ECONOMY
+						<p style="display:none;">Seamless Ai human, AI-AI cooperation powered by Deuro's unqiue decentralized protocol and economic incentive model</p>
+					</span> 
+					<span class="b">INTELLIGENCE
+						<p style="display:none;">Various intelligent AI distributed on decentralized protocol, they are powered by machine learning algorithm run by miners all over the world.</p>
+					</span> 
+					<span class="b">TRUSTWOTHINESS
+						<p style="display:none;">Trustless consensus with very low latency and high accuracy.</p>
+					</span> 
 		</div>
-			<a class="messsage-anchor" href="https://web.telegram.org/#/login"><img class="message" src="./images/message.png" height="50px;" width="50px;"></a>
+				<a class="messsage-anchor" href="https://web.telegram.org/#/login"><img class="message" src="./images/5842a8fba6515b1e0ad75b03.png" height="50px;" width="50px;"></a>
 	</div>
 	<br>
 
