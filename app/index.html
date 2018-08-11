@@ -1,12 +1,21 @@
 <!doctype html>
 <html ng-app="myModule">
   	<head>
+<<<<<<< HEAD
   		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-route.min.js"></script>
 		<!-- <link href="./css/app.css" > -->
+=======
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-route.min.js"></script>
+		<link href="./css/app.css" >
+		<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet"> -->
+		<!-- <script  src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script> -->
+>>>>>>> 70480f320f619997315edf9319ea6121c235578a
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -73,6 +82,7 @@
 				margin-bottom: 50px; 
 			}
 			.pre-loader{
+<<<<<<< HEAD
 		        width: 100%;
 			    height: 100%;
 			    background: #000;
@@ -82,6 +92,16 @@
 			    background-position: center center;
 			    background-repeat: no-repeat;
 			    background-size: 40%;
+=======
+				width: 100%;
+				height: 100%;
+				background: #000;
+				position: absolute;
+				z-index: 1;
+				background-image: url('./images/DEUROV8_meitu_1_meitu_5-4.png');				
+				background-position: center center;
+			    background-repeat: no-repeat;
+>>>>>>> 70480f320f619997315edf9319ea6121c235578a
 			}
 			.bg-cover{
 				width: 100%;
@@ -90,8 +110,13 @@
 				z-index: 0;
 				position: absolute;
 			}
+<<<<<<< HEAD
 		  	.accordion-toggle {cursor: pointer; font-size: 40px;padding: 0;margin: 0;}	
 			.accordion-content {display: none;font-size: 21px;padding-left: 10%;padding-right: 10%;}
+=======
+		  	.accordion-toggle {cursor: pointer; font-size: 48px;}
+			.accordion-content {display: none;font-size: 24px;padding-left: 10%;padding-right: 10%;}
+>>>>>>> 70480f320f619997315edf9319ea6121c235578a
 			.accordion-content.default {display: block;}
 			#deuro{
 				background:linear-gradient(rgba(40, 45, 80, .8), rgba(40, 45, 80, .8)), url("./images/photo-1249182325215-d517de72c42d.jpg");
@@ -113,6 +138,7 @@
 				background:linear-gradient(rgba(40, 45, 80, .8), rgba(40, 45, 80, .8)), url("./images/photo-1446797376004-9352dfc9f789.jpg");
 			}
 			.accordion-container{
+<<<<<<< HEAD
 				width: 100%;
 				background-repeat: no-repeat !important;
 			    background-size: cover !important;
@@ -221,6 +247,44 @@
 
   					// $(this).parent('.accordion-container').addClass('active-accordion');
 					
+=======
+				width: 100% !important;
+				background-repeat: no-repeat !important;
+			    background-size: cover !important;
+			    padding: 25px !important;
+			    background-position: center center !important;
+			}
+			.active-accordion{
+				padding: 200px 0px !important;
+			}
+  		</style>
+  		<script type="text/javascript">
+  			$(document).ready(function(){
+  				setTimeout(function() {
+  					$('.pre-loader').addClass('animated zoomOutDown');
+  					setTimeout(function() {
+  						$('.pre-loader').hide();
+  					}, 300);
+  				}, 500);
+
+  				$('body').on('click', '.navbar-toggle', function(){
+  					$('.navbar-collapse-item').toggle();
+  					setTimeout(function() {
+  						$('body').find('li').each(function(i) {
+						 $(this).addClass('animated slideInLeft delay-'+i+'s');
+						});
+
+	  				}, 500);
+  				});
+
+  				$('#accordion').find('.accordion-toggle').click(function(){
+  					$('.accordion-container').removeClass('active-accordion');
+			    	//Expand or collapse this panel
+	      			$(this).next().slideToggle('fast');
+	      			$(this).parent('.accordion-container').addClass('active-accordion');
+				    //Hide the other panels
+					$(".accordion-content").not($(this).next()).slideUp('fast');
+>>>>>>> 70480f320f619997315edf9319ea6121c235578a
 			    });
   			});
   		</script>
@@ -231,7 +295,11 @@
   		<nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
+<<<<<<< HEAD
 		      <button type="button" class="navbar-toggle" style="display: block;border-color: transparent; ">
+=======
+		      <button type="button" class="navbar-toggle" style="display: block;">
+>>>>>>> 70480f320f619997315edf9319ea6121c235578a
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>                        
@@ -252,7 +320,11 @@
 		<div class="container-fluid bg-1 text-center" style="z-index: 1">
 		  	<div class="row">
 			  	<div id="accordion">
+<<<<<<< HEAD
 			  		<div id="deuro" class="accordion-container" style="padding: 50px 0px;height: 290px;">
+=======
+			  		<div id="deuro" class="accordion-container active-accordion">
+>>>>>>> 70480f320f619997315edf9319ea6121c235578a
 					  	<h2 class="accordion-toggle">DEURO</h2>
 					  	<div class="accordion-content default">
 					    	<p>Democratize AI on the Blockchain</p>
@@ -289,9 +361,12 @@
 					  	</div>
 					</div>  	
 				</div>
+<<<<<<< HEAD
 				<a href="https://t.me/deuroio_english" id="tele-chat-icon">
 					<img src="./images/tele-icon.png" alt="Telegram App" width="70px">
 				</a>
+=======
+>>>>>>> 70480f320f619997315edf9319ea6121c235578a
 		  	</div>
 		</div>
   	</body>
