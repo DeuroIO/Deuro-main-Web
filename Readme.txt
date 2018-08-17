@@ -1,4 +1,3 @@
-# Deuro-main-Web
 #Technology used in this project is angularjs, No need to install any dependency. For installation follow below steps:
 #=============start==============================#
 
@@ -7,5 +6,3 @@
 3)Run the project by typing the url http://localhost/foldername on your browser
 
 #===============end===============================#
-
-
